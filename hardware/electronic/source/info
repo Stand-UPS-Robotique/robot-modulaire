@@ -1,0 +1,1641 @@
+{
+  "uuid": "e6f67b95948d8dd3dafb1af88e7f6a50",
+  "path": "Offline/robot-modulaire-2",
+  "name": "robot-modulaire-2",
+  "content": "",
+  "created_at": "2022-05-25 23:12:31",
+  "updated_at": "2022-05-28 17:53:17",
+  "stick": "",
+  "documents": [
+    {
+      "uuid": "6e558460b199737801772dee4485ac55",
+      "title": "Power stage",
+      "description": "Power stage composed of buck converter DC-DC to convert battery voltage to Vcc.\n",
+      "docType": "1",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "5e442a14c66d46d5ab327f1e7943af07": 1,
+        "2d903e5f6d15b23709bc81475031f40d": 2,
+        "fcaba4851eda4ca19d4326a668633a30": 1,
+        "b3954b47b7334d8f926c9199c413a9ef": 1,
+        "96df7ed3d6824dd8b924dfe0608d3f76": 1,
+        "1248859d7a104cb596ff3dcce5029757": 1,
+        "1c8ed7e007ee44fba59a2d5c1e8d8fc5": 1,
+        "d294a010043b4be3973ae69b59580ae5": 1,
+        "593e400ea97c4b74b79aed4b116ee4db": 1,
+        "ccfbc52d40178ec7ede8d170b6afb6c3": 1,
+        "e545f26e87c74952857381bd0bff848e": 1
+      },
+      "BOM": [
+        [
+          "Value",
+          "Quantity",
+          "Package",
+          "Components",
+          "CustomPara"
+        ],
+        [
+          "100u",
+          1,
+          "CASE-A_3216",
+          "C1",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "ce25118ef0b041b8a773e71ca28ae65d",
+            "uuid": "e545f26e87c74952857381bd0bff848e"
+          }
+        ],
+        [
+          "220uF",
+          1,
+          "CAP-SMD_BD6.3-L6.6-W6.6-RD",
+          "C4",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C250010",
+            "BOM_Manufacturer": "Lelon",
+            "BOM_Manufacturer Part": "OCV221M0JTR-0607",
+            "BOM_LCSC Assembly": "Yes",
+            "puuid": "5332c614f5204743ba9a8e4549223bfb",
+            "uuid": "1c8ed7e007ee44fba59a2d5c1e8d8fc5"
+          }
+        ],
+        [
+          "470uF",
+          1,
+          "CAP-TH_BD8.0-P3.50-D1.0-FD",
+          "C5",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C311643",
+            "BOM_Manufacturer": "Lelon",
+            "BOM_Manufacturer Part": "RGA471M1EBK-0815G",
+            "puuid": "90d1b58a2d284d63b5d026a0c4e38bab",
+            "uuid": "b3954b47b7334d8f926c9199c413a9ef"
+          }
+        ],
+        [
+          "10uF",
+          1,
+          "C1206",
+          "C6",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C318755",
+            "BOM_Manufacturer": "Samsung Electro-Mechanics",
+            "BOM_Manufacturer Part": "CL31A106KACLNNC",
+            "BOM_LCSC Assembly": "Yes",
+            "puuid": "b4235c9f870d443994cfe44a496e36ac",
+            "uuid": "d294a010043b4be3973ae69b59580ae5"
+          }
+        ],
+        [
+          "SS54",
+          1,
+          "SMB_L4.6-W3.6-LS5.3-R-RD",
+          "D1",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer Part": "SS54",
+            "BOM_Manufacturer": "MDD",
+            "BOM_Supplier Part": "C32513",
+            "BOM_LCSC Assembly": "Yes",
+            "puuid": "a49573e81e874a71a2de48f04643c903",
+            "uuid": "ccfbc52d40178ec7ede8d170b6afb6c3"
+          }
+        ],
+        [
+          "XH-2PWB",
+          1,
+          "JST-XH-2PIN",
+          "J6",
+          {
+            "BOM_Supplier Part": "C64520",
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer": "ReliaPro",
+            "BOM_Manufacturer Part": "XH-2PWB",
+            "puuid": "c1f0c86794404bcc9f90aa62c02fda5e",
+            "uuid": "5e442a14c66d46d5ab327f1e7943af07"
+          }
+        ],
+        [
+          "47uH",
+          1,
+          "IND-SMD_L7.0-W6.6",
+          "L1",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C408471",
+            "BOM_Manufacturer": "Sunlord",
+            "BOM_Manufacturer Part": "MWSA0605S-470MT",
+            "BOM_LCSC Assembly": "Yes",
+            "puuid": "1a7b37028c744c44a208c7852a0fbc88",
+            "uuid": "1248859d7a104cb596ff3dcce5029757"
+          }
+        ],
+        [
+          "14.7K",
+          2,
+          "R0805",
+          "R3,R4",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer": "UniOhm",
+            "BOM_Manufacturer Part": "0805W8F1472T5E",
+            "BOM_Supplier Part": "C17458",
+            "BOM_LCSC Assembly": "Yes",
+            "puuid": "769626f169ec49d9867bc27eb696b6b9",
+            "uuid": "2d903e5f6d15b23709bc81475031f40d"
+          }
+        ],
+        [
+          "10K",
+          1,
+          "R0805",
+          "R5",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C38522",
+            "BOM_Manufacturer": "Uniroyal Elec",
+            "BOM_Manufacturer Part": "0805W8F1002T5E",
+            "BOM_LCSC Assembly": "Yes",
+            "puuid": "769626f169ec49d9867bc27eb696b6b9",
+            "uuid": "593e400ea97c4b74b79aed4b116ee4db"
+          }
+        ],
+        [
+          "5k",
+          1,
+          "RES-ADJ-TH_3P-L9.5-W4.9-P2.50-L_3296W",
+          "RP1",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer Part": "",
+            "puuid": "50d2096590234dbe99c56e37258c65b2",
+            "uuid": "fcaba4851eda4ca19d4326a668633a30"
+          }
+        ],
+        [
+          "LM2596S",
+          1,
+          "TO-263-5_L10.2-W9.9-P1.70-LS14.4-TL",
+          "U3",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer": "TI",
+            "BOM_Manufacturer Part": "LM2596SX-ADJ/NOPB",
+            "BOM_Supplier Part": "C29781",
+            "BOM_LCSC Assembly": "Yes",
+            "puuid": "cd40268100fb439b9af4fa829d321935",
+            "uuid": "96df7ed3d6824dd8b924dfe0608d3f76"
+          }
+        ],
+        [
+          "1uF",
+          2,
+          "CAP-TH_BD4.0-P1.50-D0.8-FD",
+          "C2,C3",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C216309",
+            "BOM_Manufacturer": "Changzhou Huawei Elec",
+            "BOM_Manufacturer Part": "KF1H010MB050A00CV0",
+            "BOM_JLCPCB Part Class": "Extended Part",
+            "puuid": "4e77392dad62499487a3be9d0c41e95e",
+            "uuid": "e344f0190b7441b589bc455b39243993"
+          }
+        ],
+        [
+          "JST XH 2-pin",
+          4,
+          "JST XH-2 TOP ENTRY CONNECTOR",
+          "J1,J2,J3,J4",
+          {
+            "BOM_Manufacturer": "",
+            "BOM_Manufacturer Part": "",
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "puuid": "bbe6f02654bf4b1a9810db8cb4ab274a",
+            "uuid": "c332b48f3249401fbc445d0b24556f83"
+          }
+        ],
+        [
+          "JST-XH_3-PIN",
+          2,
+          "JST XH 2.54MM 3P",
+          "J5,J7",
+          {
+            "BOM_Manufacturer Part": "",
+            "puuid": "628c988a83424a4bb6f481767c3e6990",
+            "uuid": "d02e6bd8a2eb4f118e48a8c44d97acc5"
+          }
+        ],
+        [
+          "2N2222A",
+          4,
+          "TO-92-3_L4.8-W3.7-P2.54-R",
+          "Q1,Q2,Q3,Q4",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C358533",
+            "BOM_Manufacturer": "Foshan Blue Rocket Elec",
+            "BOM_Manufacturer Part": "2N2222A",
+            "BOM_JLCPCB Part Class": "Extended Part",
+            "puuid": "d759540c89844d9986051022192fcef6",
+            "uuid": "4160acdcbf3c44b7857840e3de817f0d"
+          }
+        ],
+        [
+          "1k",
+          8,
+          "R0805",
+          "R1,R2,R6,R7,R8,R9,R10,R11",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "b60f399a7a7e41848b2be1eb49c79141",
+            "uuid": "bb009484ef804a24ac5d18c54b249586"
+          }
+        ],
+        [
+          "L293DN",
+          2,
+          "DIP-16_L19.2-W6.6-P2.54-LS7.6-BL",
+          "U1,U2",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C434590",
+            "BOM_Manufacturer": "HGSEMI",
+            "BOM_Manufacturer Part": "L293DN",
+            "BOM_JLCPCB Part Class": "Extended Part",
+            "puuid": "1f08add49d2741c882f40776d2fab26f",
+            "uuid": "d59786a2b92b4f74a993dab77abad42a"
+          }
+        ],
+        [
+          "1uF",
+          2,
+          "CAP-TH_BD4.0-P1.50-D0.8-FD",
+          "C7,C8",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C216309",
+            "BOM_Manufacturer": "Changzhou Huawei Elec",
+            "BOM_Manufacturer Part": "KF1H010MB050A00CV0",
+            "BOM_JLCPCB Part Class": "Extended Part",
+            "puuid": "4e77392dad62499487a3be9d0c41e95e",
+            "uuid": "e344f0190b7441b589bc455b39243993"
+          }
+        ],
+        [
+          "HDR-M-2.54_1x2",
+          1,
+          "HDR-M-2.54_1X2",
+          "J8",
+          {
+            "BOM_Supplier Part": "C124375",
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "70aa5812f21f4991bf427395d51849f4",
+            "uuid": "a9aa2b14f188405792fa87ac344499a4"
+          }
+        ],
+        [
+          "JST-XH_3-PIN",
+          2,
+          "JST XH 2.54MM 3P",
+          "J10,J11",
+          {
+            "BOM_Manufacturer Part": "",
+            "puuid": "628c988a83424a4bb6f481767c3e6990",
+            "uuid": "d02e6bd8a2eb4f118e48a8c44d97acc5"
+          }
+        ],
+        [
+          "7k",
+          1,
+          "R0805",
+          "R12",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "b60f399a7a7e41848b2be1eb49c79141",
+            "uuid": "bb009484ef804a24ac5d18c54b249586"
+          }
+        ],
+        [
+          "10k",
+          1,
+          "R0805",
+          "R13",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "b60f399a7a7e41848b2be1eb49c79141",
+            "uuid": "bb009484ef804a24ac5d18c54b249586"
+          }
+        ],
+        [
+          "hc 05",
+          1,
+          "HC05 BT",
+          "U4",
+          {
+            "BOM_Manufacturer": "",
+            "BOM_Manufacturer Part": "",
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "puuid": "6cafa669542a49b5820163e14b2cf434",
+            "uuid": "61351147db43423f92414fe09bf71240"
+          }
+        ],
+        [
+          "JST header male 4x1",
+          1,
+          "JST 4 PIN",
+          "U5",
+          {
+            "BOM_Manufacturer": "",
+            "BOM_Manufacturer Part": "",
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "puuid": "db39b89755184cf095b423ff01374a32",
+            "uuid": "d73fed50c0984d188121b52dc043c18a"
+          }
+        ],
+        [
+          "HDR-F-2.54_1x15",
+          2,
+          "HDR-F-2.54_1X15",
+          "H1,H2",
+          {
+            "BOM_Supplier Part": "C124408",
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "bce4bcfcccfb42a296f7a392ab0b7199",
+            "uuid": "5a9ec2085ad6436d86701332d4451b76"
+          }
+        ],
+        [
+          "ARDUINO-NANO-3.0",
+          1,
+          "ARDUINO-NANO-3.0",
+          "M1",
+          {
+            "BOM_Manufacturer Part": "",
+            "puuid": "6bf0f4ac95c74169bbaee50a954d4a97",
+            "uuid": "15fd1d9309314da89be3b8d58fbbdea5"
+          }
+        ]
+      ],
+      "updateTime": 1653669161,
+      "createTime": 1653514140,
+      "histories": [],
+      "created_at": "2022-05-25 23:29:00",
+      "updated_at": "2022-05-27 18:32:41"
+    },
+    {
+      "uuid": "f6d8c02cd2954fa93fd0ea1a50ae61cd",
+      "title": "Motor stage",
+      "description": "The motor stage composed of L293D, 4 signals inverter to control 4 CC motors and 2 controls for 2 servo motors.",
+      "docType": "1",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "d59786a2b92b4f74a993dab77abad42a": 2,
+        "4160acdcbf3c44b7857840e3de817f0d": 4,
+        "bb009484ef804a24ac5d18c54b249586": 8,
+        "c332b48f3249401fbc445d0b24556f83": 4,
+        "e344f0190b7441b589bc455b39243993": 2,
+        "d02e6bd8a2eb4f118e48a8c44d97acc5": 2,
+        "0d0a13f4d5e4481aa82dc0293d1aa27e": 1
+      },
+      "BOM": [
+        [
+          "Value",
+          "Quantity",
+          "Package",
+          "Components",
+          "CustomPara"
+        ],
+        [
+          "100u",
+          1,
+          "CASE-A_3216",
+          "C1",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "ce25118ef0b041b8a773e71ca28ae65d",
+            "uuid": "e545f26e87c74952857381bd0bff848e"
+          }
+        ],
+        [
+          "220uF",
+          1,
+          "CAP-SMD_BD6.3-L6.6-W6.6-RD",
+          "C4",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C250010",
+            "BOM_Manufacturer": "Lelon",
+            "BOM_Manufacturer Part": "OCV221M0JTR-0607",
+            "BOM_LCSC Assembly": "Yes",
+            "puuid": "5332c614f5204743ba9a8e4549223bfb",
+            "uuid": "1c8ed7e007ee44fba59a2d5c1e8d8fc5"
+          }
+        ],
+        [
+          "470uF",
+          1,
+          "CAP-TH_BD8.0-P3.50-D1.0-FD",
+          "C5",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C311643",
+            "BOM_Manufacturer": "Lelon",
+            "BOM_Manufacturer Part": "RGA471M1EBK-0815G",
+            "puuid": "90d1b58a2d284d63b5d026a0c4e38bab",
+            "uuid": "b3954b47b7334d8f926c9199c413a9ef"
+          }
+        ],
+        [
+          "10uF",
+          1,
+          "C1206",
+          "C6",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C318755",
+            "BOM_Manufacturer": "Samsung Electro-Mechanics",
+            "BOM_Manufacturer Part": "CL31A106KACLNNC",
+            "BOM_LCSC Assembly": "Yes",
+            "puuid": "b4235c9f870d443994cfe44a496e36ac",
+            "uuid": "d294a010043b4be3973ae69b59580ae5"
+          }
+        ],
+        [
+          "SS54",
+          1,
+          "SMB_L4.6-W3.6-LS5.3-R-RD",
+          "D1",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer Part": "SS54",
+            "BOM_Manufacturer": "MDD",
+            "BOM_Supplier Part": "C32513",
+            "BOM_LCSC Assembly": "Yes",
+            "puuid": "a49573e81e874a71a2de48f04643c903",
+            "uuid": "ccfbc52d40178ec7ede8d170b6afb6c3"
+          }
+        ],
+        [
+          "XH-2PWB",
+          1,
+          "JST-XH-2PIN",
+          "J6",
+          {
+            "BOM_Supplier Part": "C64520",
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer": "ReliaPro",
+            "BOM_Manufacturer Part": "XH-2PWB",
+            "puuid": "c1f0c86794404bcc9f90aa62c02fda5e",
+            "uuid": "5e442a14c66d46d5ab327f1e7943af07"
+          }
+        ],
+        [
+          "47uH",
+          1,
+          "IND-SMD_L7.0-W6.6",
+          "L1",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C408471",
+            "BOM_Manufacturer": "Sunlord",
+            "BOM_Manufacturer Part": "MWSA0605S-470MT",
+            "BOM_LCSC Assembly": "Yes",
+            "puuid": "1a7b37028c744c44a208c7852a0fbc88",
+            "uuid": "1248859d7a104cb596ff3dcce5029757"
+          }
+        ],
+        [
+          "14.7K",
+          2,
+          "R0805",
+          "R3,R4",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer": "UniOhm",
+            "BOM_Manufacturer Part": "0805W8F1472T5E",
+            "BOM_Supplier Part": "C17458",
+            "BOM_LCSC Assembly": "Yes",
+            "puuid": "769626f169ec49d9867bc27eb696b6b9",
+            "uuid": "2d903e5f6d15b23709bc81475031f40d"
+          }
+        ],
+        [
+          "10K",
+          1,
+          "R0805",
+          "R5",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C38522",
+            "BOM_Manufacturer": "Uniroyal Elec",
+            "BOM_Manufacturer Part": "0805W8F1002T5E",
+            "BOM_LCSC Assembly": "Yes",
+            "puuid": "769626f169ec49d9867bc27eb696b6b9",
+            "uuid": "593e400ea97c4b74b79aed4b116ee4db"
+          }
+        ],
+        [
+          "5k",
+          1,
+          "RES-ADJ-TH_3P-L9.5-W4.9-P2.50-L_3296W",
+          "RP1",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer Part": "",
+            "puuid": "50d2096590234dbe99c56e37258c65b2",
+            "uuid": "fcaba4851eda4ca19d4326a668633a30"
+          }
+        ],
+        [
+          "LM2596S",
+          1,
+          "TO-263-5_L10.2-W9.9-P1.70-LS14.4-TL",
+          "U3",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer": "TI",
+            "BOM_Manufacturer Part": "LM2596SX-ADJ/NOPB",
+            "BOM_Supplier Part": "C29781",
+            "BOM_LCSC Assembly": "Yes",
+            "puuid": "cd40268100fb439b9af4fa829d321935",
+            "uuid": "96df7ed3d6824dd8b924dfe0608d3f76"
+          }
+        ],
+        [
+          "1uF",
+          2,
+          "CAP-TH_BD4.0-P1.50-D0.8-FD",
+          "C2,C3",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C216309",
+            "BOM_Manufacturer": "Changzhou Huawei Elec",
+            "BOM_Manufacturer Part": "KF1H010MB050A00CV0",
+            "BOM_JLCPCB Part Class": "Extended Part",
+            "puuid": "4e77392dad62499487a3be9d0c41e95e",
+            "uuid": "e344f0190b7441b589bc455b39243993"
+          }
+        ],
+        [
+          "JST XH 2-pin",
+          4,
+          "JST XH-2 TOP ENTRY CONNECTOR",
+          "J1,J2,J3,J4",
+          {
+            "BOM_Manufacturer": "",
+            "BOM_Manufacturer Part": "",
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "puuid": "bbe6f02654bf4b1a9810db8cb4ab274a",
+            "uuid": "c332b48f3249401fbc445d0b24556f83"
+          }
+        ],
+        [
+          "JST-XH_3-PIN",
+          2,
+          "JST XH 2.54MM 3P",
+          "J5,J7",
+          {
+            "BOM_Manufacturer Part": "",
+            "puuid": "628c988a83424a4bb6f481767c3e6990",
+            "uuid": "d02e6bd8a2eb4f118e48a8c44d97acc5"
+          }
+        ],
+        [
+          "HDR-M-2.54_2x2",
+          1,
+          "HDR-M-2.54_2X2",
+          "J9",
+          {
+            "BOM_Supplier Part": "C66690",
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "8c011694efe04de7ac0c392bf11240d5",
+            "uuid": "0d0a13f4d5e4481aa82dc0293d1aa27e"
+          }
+        ],
+        [
+          "2N2222A",
+          4,
+          "TO-92-3_L4.8-W3.7-P2.54-R",
+          "Q1,Q2,Q3,Q4",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C358533",
+            "BOM_Manufacturer": "Foshan Blue Rocket Elec",
+            "BOM_Manufacturer Part": "2N2222A",
+            "BOM_JLCPCB Part Class": "Extended Part",
+            "puuid": "d759540c89844d9986051022192fcef6",
+            "uuid": "4160acdcbf3c44b7857840e3de817f0d"
+          }
+        ],
+        [
+          "1k",
+          8,
+          "R0805",
+          "R1,R2,R6,R7,R8,R9,R10,R11",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "b60f399a7a7e41848b2be1eb49c79141",
+            "uuid": "bb009484ef804a24ac5d18c54b249586"
+          }
+        ],
+        [
+          "L293DN",
+          2,
+          "DIP-16_L19.2-W6.6-P2.54-LS7.6-BL",
+          "U1,U2",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C434590",
+            "BOM_Manufacturer": "HGSEMI",
+            "BOM_Manufacturer Part": "L293DN",
+            "BOM_JLCPCB Part Class": "Extended Part",
+            "puuid": "1f08add49d2741c882f40776d2fab26f",
+            "uuid": "d59786a2b92b4f74a993dab77abad42a"
+          }
+        ],
+        [
+          "1uF",
+          2,
+          "CAP-TH_BD4.0-P1.50-D0.8-FD",
+          "C7,C8",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C216309",
+            "BOM_Manufacturer": "Changzhou Huawei Elec",
+            "BOM_Manufacturer Part": "KF1H010MB050A00CV0",
+            "BOM_JLCPCB Part Class": "Extended Part",
+            "puuid": "4e77392dad62499487a3be9d0c41e95e",
+            "uuid": "e344f0190b7441b589bc455b39243993"
+          }
+        ],
+        [
+          "HDR-M-2.54_1x2",
+          1,
+          "HDR-M-2.54_1X2",
+          "J8",
+          {
+            "BOM_Supplier Part": "C124375",
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "70aa5812f21f4991bf427395d51849f4",
+            "uuid": "a9aa2b14f188405792fa87ac344499a4"
+          }
+        ],
+        [
+          "JST-XH_3-PIN",
+          2,
+          "JST XH 2.54MM 3P",
+          "J10,J11",
+          {
+            "BOM_Manufacturer Part": "",
+            "puuid": "628c988a83424a4bb6f481767c3e6990",
+            "uuid": "d02e6bd8a2eb4f118e48a8c44d97acc5"
+          }
+        ],
+        [
+          "7k",
+          1,
+          "R0805",
+          "R12",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "b60f399a7a7e41848b2be1eb49c79141",
+            "uuid": "bb009484ef804a24ac5d18c54b249586"
+          }
+        ],
+        [
+          "10k",
+          1,
+          "R0805",
+          "R13",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "b60f399a7a7e41848b2be1eb49c79141",
+            "uuid": "bb009484ef804a24ac5d18c54b249586"
+          }
+        ],
+        [
+          "hc 05",
+          1,
+          "HC05 BT",
+          "U4",
+          {
+            "BOM_Manufacturer": "",
+            "BOM_Manufacturer Part": "",
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "puuid": "6cafa669542a49b5820163e14b2cf434",
+            "uuid": "61351147db43423f92414fe09bf71240"
+          }
+        ],
+        [
+          "JST header male 4x1",
+          1,
+          "JST 4 PIN",
+          "U5",
+          {
+            "BOM_Manufacturer": "",
+            "BOM_Manufacturer Part": "",
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "puuid": "db39b89755184cf095b423ff01374a32",
+            "uuid": "d73fed50c0984d188121b52dc043c18a"
+          }
+        ],
+        [
+          "HDR-F-2.54_1x15",
+          2,
+          "HDR-F-2.54_1X15",
+          "H1,H2",
+          {
+            "BOM_Supplier Part": "C124408",
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "bce4bcfcccfb42a296f7a392ab0b7199",
+            "uuid": "5a9ec2085ad6436d86701332d4451b76"
+          }
+        ],
+        [
+          "ARDUINO-NANO-3.0",
+          1,
+          "ARDUINO-NANO-3.0",
+          "M1",
+          {
+            "BOM_Manufacturer Part": "",
+            "puuid": "6bf0f4ac95c74169bbaee50a954d4a97",
+            "uuid": "15fd1d9309314da89be3b8d58fbbdea5"
+          }
+        ]
+      ],
+      "updateTime": 1653752908,
+      "createTime": 1653514197,
+      "histories": [],
+      "created_at": "2022-05-25 23:29:57",
+      "updated_at": "2022-05-28 17:48:28"
+    },
+    {
+      "uuid": "09c3e7702c8beb0e1be17b622e9380b3",
+      "title": "Peripherals stage",
+      "description": "Peripherals stage composed of sensors (ultrasonic, IR, I2C...) and communication linker (Bluetooth).",
+      "docType": "1",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "a9aa2b14f188405792fa87ac344499a4": 1,
+        "61351147db43423f92414fe09bf71240": 1,
+        "bb009484ef804a24ac5d18c54b249586": 2,
+        "e344f0190b7441b589bc455b39243993": 2,
+        "d02e6bd8a2eb4f118e48a8c44d97acc5": 2,
+        "d73fed50c0984d188121b52dc043c18a": 1
+      },
+      "BOM": [
+        [
+          "Value",
+          "Quantity",
+          "Package",
+          "Components",
+          "CustomPara"
+        ],
+        [
+          "100u",
+          1,
+          "CASE-A_3216",
+          "C1",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "ce25118ef0b041b8a773e71ca28ae65d",
+            "uuid": "e545f26e87c74952857381bd0bff848e"
+          }
+        ],
+        [
+          "220uF",
+          1,
+          "CAP-SMD_BD6.3-L6.6-W6.6-RD",
+          "C4",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C250010",
+            "BOM_Manufacturer": "Lelon",
+            "BOM_Manufacturer Part": "OCV221M0JTR-0607",
+            "BOM_LCSC Assembly": "Yes",
+            "puuid": "5332c614f5204743ba9a8e4549223bfb",
+            "uuid": "1c8ed7e007ee44fba59a2d5c1e8d8fc5"
+          }
+        ],
+        [
+          "470uF",
+          1,
+          "CAP-TH_BD8.0-P3.50-D1.0-FD",
+          "C5",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C311643",
+            "BOM_Manufacturer": "Lelon",
+            "BOM_Manufacturer Part": "RGA471M1EBK-0815G",
+            "puuid": "90d1b58a2d284d63b5d026a0c4e38bab",
+            "uuid": "b3954b47b7334d8f926c9199c413a9ef"
+          }
+        ],
+        [
+          "10uF",
+          1,
+          "C1206",
+          "C6",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C318755",
+            "BOM_Manufacturer": "Samsung Electro-Mechanics",
+            "BOM_Manufacturer Part": "CL31A106KACLNNC",
+            "BOM_LCSC Assembly": "Yes",
+            "puuid": "b4235c9f870d443994cfe44a496e36ac",
+            "uuid": "d294a010043b4be3973ae69b59580ae5"
+          }
+        ],
+        [
+          "SS54",
+          1,
+          "SMB_L4.6-W3.6-LS5.3-R-RD",
+          "D1",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer Part": "SS54",
+            "BOM_Manufacturer": "MDD",
+            "BOM_Supplier Part": "C32513",
+            "BOM_LCSC Assembly": "Yes",
+            "puuid": "a49573e81e874a71a2de48f04643c903",
+            "uuid": "ccfbc52d40178ec7ede8d170b6afb6c3"
+          }
+        ],
+        [
+          "XH-2PWB",
+          1,
+          "JST-XH-2PIN",
+          "J6",
+          {
+            "BOM_Supplier Part": "C64520",
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer": "ReliaPro",
+            "BOM_Manufacturer Part": "XH-2PWB",
+            "puuid": "c1f0c86794404bcc9f90aa62c02fda5e",
+            "uuid": "5e442a14c66d46d5ab327f1e7943af07"
+          }
+        ],
+        [
+          "47uH",
+          1,
+          "IND-SMD_L7.0-W6.6",
+          "L1",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C408471",
+            "BOM_Manufacturer": "Sunlord",
+            "BOM_Manufacturer Part": "MWSA0605S-470MT",
+            "BOM_LCSC Assembly": "Yes",
+            "puuid": "1a7b37028c744c44a208c7852a0fbc88",
+            "uuid": "1248859d7a104cb596ff3dcce5029757"
+          }
+        ],
+        [
+          "14.7K",
+          2,
+          "R0805",
+          "R3,R4",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer": "UniOhm",
+            "BOM_Manufacturer Part": "0805W8F1472T5E",
+            "BOM_Supplier Part": "C17458",
+            "BOM_LCSC Assembly": "Yes",
+            "puuid": "769626f169ec49d9867bc27eb696b6b9",
+            "uuid": "2d903e5f6d15b23709bc81475031f40d"
+          }
+        ],
+        [
+          "10K",
+          1,
+          "R0805",
+          "R5",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C38522",
+            "BOM_Manufacturer": "Uniroyal Elec",
+            "BOM_Manufacturer Part": "0805W8F1002T5E",
+            "BOM_LCSC Assembly": "Yes",
+            "puuid": "769626f169ec49d9867bc27eb696b6b9",
+            "uuid": "593e400ea97c4b74b79aed4b116ee4db"
+          }
+        ],
+        [
+          "5k",
+          1,
+          "RES-ADJ-TH_3P-L9.5-W4.9-P2.50-L_3296W",
+          "RP1",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer Part": "",
+            "puuid": "50d2096590234dbe99c56e37258c65b2",
+            "uuid": "fcaba4851eda4ca19d4326a668633a30"
+          }
+        ],
+        [
+          "LM2596S",
+          1,
+          "TO-263-5_L10.2-W9.9-P1.70-LS14.4-TL",
+          "U3",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer": "TI",
+            "BOM_Manufacturer Part": "LM2596SX-ADJ/NOPB",
+            "BOM_Supplier Part": "C29781",
+            "BOM_LCSC Assembly": "Yes",
+            "puuid": "cd40268100fb439b9af4fa829d321935",
+            "uuid": "96df7ed3d6824dd8b924dfe0608d3f76"
+          }
+        ],
+        [
+          "1uF",
+          2,
+          "CAP-TH_BD4.0-P1.50-D0.8-FD",
+          "C2,C3",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C216309",
+            "BOM_Manufacturer": "Changzhou Huawei Elec",
+            "BOM_Manufacturer Part": "KF1H010MB050A00CV0",
+            "BOM_JLCPCB Part Class": "Extended Part",
+            "puuid": "4e77392dad62499487a3be9d0c41e95e",
+            "uuid": "e344f0190b7441b589bc455b39243993"
+          }
+        ],
+        [
+          "JST XH 2-pin",
+          4,
+          "JST XH-2 TOP ENTRY CONNECTOR",
+          "J1,J2,J3,J4",
+          {
+            "BOM_Manufacturer": "",
+            "BOM_Manufacturer Part": "",
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "puuid": "bbe6f02654bf4b1a9810db8cb4ab274a",
+            "uuid": "c332b48f3249401fbc445d0b24556f83"
+          }
+        ],
+        [
+          "JST-XH_3-PIN",
+          2,
+          "JST XH 2.54MM 3P",
+          "J5,J7",
+          {
+            "BOM_Manufacturer Part": "",
+            "puuid": "628c988a83424a4bb6f481767c3e6990",
+            "uuid": "d02e6bd8a2eb4f118e48a8c44d97acc5"
+          }
+        ],
+        [
+          "2N2222A",
+          4,
+          "TO-92-3_L4.8-W3.7-P2.54-R",
+          "Q1,Q2,Q3,Q4",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C358533",
+            "BOM_Manufacturer": "Foshan Blue Rocket Elec",
+            "BOM_Manufacturer Part": "2N2222A",
+            "BOM_JLCPCB Part Class": "Extended Part",
+            "puuid": "d759540c89844d9986051022192fcef6",
+            "uuid": "4160acdcbf3c44b7857840e3de817f0d"
+          }
+        ],
+        [
+          "1k",
+          8,
+          "R0805",
+          "R1,R2,R6,R7,R8,R9,R10,R11",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "b60f399a7a7e41848b2be1eb49c79141",
+            "uuid": "bb009484ef804a24ac5d18c54b249586"
+          }
+        ],
+        [
+          "L293DN",
+          2,
+          "DIP-16_L19.2-W6.6-P2.54-LS7.6-BL",
+          "U1,U2",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C434590",
+            "BOM_Manufacturer": "HGSEMI",
+            "BOM_Manufacturer Part": "L293DN",
+            "BOM_JLCPCB Part Class": "Extended Part",
+            "puuid": "1f08add49d2741c882f40776d2fab26f",
+            "uuid": "d59786a2b92b4f74a993dab77abad42a"
+          }
+        ],
+        [
+          "1uF",
+          2,
+          "CAP-TH_BD4.0-P1.50-D0.8-FD",
+          "C7,C8",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C216309",
+            "BOM_Manufacturer": "Changzhou Huawei Elec",
+            "BOM_Manufacturer Part": "KF1H010MB050A00CV0",
+            "BOM_JLCPCB Part Class": "Extended Part",
+            "puuid": "4e77392dad62499487a3be9d0c41e95e",
+            "uuid": "e344f0190b7441b589bc455b39243993"
+          }
+        ],
+        [
+          "HDR-M-2.54_1x2",
+          1,
+          "HDR-M-2.54_1X2",
+          "J8",
+          {
+            "BOM_Supplier Part": "C124375",
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "70aa5812f21f4991bf427395d51849f4",
+            "uuid": "a9aa2b14f188405792fa87ac344499a4"
+          }
+        ],
+        [
+          "JST-XH_3-PIN",
+          2,
+          "JST XH 2.54MM 3P",
+          "J10,J11",
+          {
+            "BOM_Manufacturer Part": "",
+            "puuid": "628c988a83424a4bb6f481767c3e6990",
+            "uuid": "d02e6bd8a2eb4f118e48a8c44d97acc5"
+          }
+        ],
+        [
+          "7k",
+          1,
+          "R0805",
+          "R12",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "b60f399a7a7e41848b2be1eb49c79141",
+            "uuid": "bb009484ef804a24ac5d18c54b249586"
+          }
+        ],
+        [
+          "10k",
+          1,
+          "R0805",
+          "R13",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "b60f399a7a7e41848b2be1eb49c79141",
+            "uuid": "bb009484ef804a24ac5d18c54b249586"
+          }
+        ],
+        [
+          "hc 05",
+          1,
+          "HC05 BT",
+          "U4",
+          {
+            "BOM_Manufacturer": "",
+            "BOM_Manufacturer Part": "",
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "puuid": "6cafa669542a49b5820163e14b2cf434",
+            "uuid": "61351147db43423f92414fe09bf71240"
+          }
+        ],
+        [
+          "JST header male 4x1",
+          1,
+          "JST 4 PIN",
+          "U5",
+          {
+            "BOM_Manufacturer": "",
+            "BOM_Manufacturer Part": "",
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "puuid": "db39b89755184cf095b423ff01374a32",
+            "uuid": "d73fed50c0984d188121b52dc043c18a"
+          }
+        ],
+        [
+          "HDR-F-2.54_1x15",
+          2,
+          "HDR-F-2.54_1X15",
+          "H1,H2",
+          {
+            "BOM_Supplier Part": "C124408",
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "bce4bcfcccfb42a296f7a392ab0b7199",
+            "uuid": "5a9ec2085ad6436d86701332d4451b76"
+          }
+        ],
+        [
+          "ARDUINO-NANO-3.0",
+          1,
+          "ARDUINO-NANO-3.0",
+          "M1",
+          {
+            "BOM_Manufacturer Part": "",
+            "puuid": "6bf0f4ac95c74169bbaee50a954d4a97",
+            "uuid": "15fd1d9309314da89be3b8d58fbbdea5"
+          }
+        ]
+      ],
+      "updateTime": 1653669755,
+      "createTime": 1653514259,
+      "histories": [],
+      "created_at": "2022-05-25 23:30:59",
+      "updated_at": "2022-05-27 18:42:35"
+    },
+    {
+      "uuid": "33b71ae75b4c9cbe8a567397d1663ed7",
+      "title": "Microcontroller Stage",
+      "description": "The microcontroller stage where all is connected.\n",
+      "docType": "1",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "15fd1d9309314da89be3b8d58fbbdea5": 1,
+        "5a9ec2085ad6436d86701332d4451b76": 2
+      },
+      "BOM": [
+        [
+          "Value",
+          "Quantity",
+          "Package",
+          "Components",
+          "CustomPara"
+        ],
+        [
+          "100u",
+          1,
+          "CASE-A_3216",
+          "C1",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "ce25118ef0b041b8a773e71ca28ae65d",
+            "uuid": "e545f26e87c74952857381bd0bff848e"
+          }
+        ],
+        [
+          "220uF",
+          1,
+          "CAP-SMD_BD6.3-L6.6-W6.6-RD",
+          "C4",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C250010",
+            "BOM_Manufacturer": "Lelon",
+            "BOM_Manufacturer Part": "OCV221M0JTR-0607",
+            "BOM_LCSC Assembly": "Yes",
+            "puuid": "5332c614f5204743ba9a8e4549223bfb",
+            "uuid": "1c8ed7e007ee44fba59a2d5c1e8d8fc5"
+          }
+        ],
+        [
+          "470uF",
+          1,
+          "CAP-TH_BD8.0-P3.50-D1.0-FD",
+          "C5",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C311643",
+            "BOM_Manufacturer": "Lelon",
+            "BOM_Manufacturer Part": "RGA471M1EBK-0815G",
+            "puuid": "90d1b58a2d284d63b5d026a0c4e38bab",
+            "uuid": "b3954b47b7334d8f926c9199c413a9ef"
+          }
+        ],
+        [
+          "10uF",
+          1,
+          "C1206",
+          "C6",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C318755",
+            "BOM_Manufacturer": "Samsung Electro-Mechanics",
+            "BOM_Manufacturer Part": "CL31A106KACLNNC",
+            "BOM_LCSC Assembly": "Yes",
+            "puuid": "b4235c9f870d443994cfe44a496e36ac",
+            "uuid": "d294a010043b4be3973ae69b59580ae5"
+          }
+        ],
+        [
+          "SS54",
+          1,
+          "SMB_L4.6-W3.6-LS5.3-R-RD",
+          "D1",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer Part": "SS54",
+            "BOM_Manufacturer": "MDD",
+            "BOM_Supplier Part": "C32513",
+            "BOM_LCSC Assembly": "Yes",
+            "puuid": "a49573e81e874a71a2de48f04643c903",
+            "uuid": "ccfbc52d40178ec7ede8d170b6afb6c3"
+          }
+        ],
+        [
+          "XH-2PWB",
+          1,
+          "JST-XH-2PIN",
+          "J6",
+          {
+            "BOM_Supplier Part": "C64520",
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer": "ReliaPro",
+            "BOM_Manufacturer Part": "XH-2PWB",
+            "puuid": "c1f0c86794404bcc9f90aa62c02fda5e",
+            "uuid": "5e442a14c66d46d5ab327f1e7943af07"
+          }
+        ],
+        [
+          "47uH",
+          1,
+          "IND-SMD_L7.0-W6.6",
+          "L1",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C408471",
+            "BOM_Manufacturer": "Sunlord",
+            "BOM_Manufacturer Part": "MWSA0605S-470MT",
+            "BOM_LCSC Assembly": "Yes",
+            "puuid": "1a7b37028c744c44a208c7852a0fbc88",
+            "uuid": "1248859d7a104cb596ff3dcce5029757"
+          }
+        ],
+        [
+          "14.7K",
+          2,
+          "R0805",
+          "R3,R4",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer": "UniOhm",
+            "BOM_Manufacturer Part": "0805W8F1472T5E",
+            "BOM_Supplier Part": "C17458",
+            "BOM_LCSC Assembly": "Yes",
+            "puuid": "769626f169ec49d9867bc27eb696b6b9",
+            "uuid": "2d903e5f6d15b23709bc81475031f40d"
+          }
+        ],
+        [
+          "10K",
+          1,
+          "R0805",
+          "R5",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C38522",
+            "BOM_Manufacturer": "Uniroyal Elec",
+            "BOM_Manufacturer Part": "0805W8F1002T5E",
+            "BOM_LCSC Assembly": "Yes",
+            "puuid": "769626f169ec49d9867bc27eb696b6b9",
+            "uuid": "593e400ea97c4b74b79aed4b116ee4db"
+          }
+        ],
+        [
+          "5k",
+          1,
+          "RES-ADJ-TH_3P-L9.5-W4.9-P2.50-L_3296W",
+          "RP1",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer Part": "",
+            "puuid": "50d2096590234dbe99c56e37258c65b2",
+            "uuid": "fcaba4851eda4ca19d4326a668633a30"
+          }
+        ],
+        [
+          "LM2596S",
+          1,
+          "TO-263-5_L10.2-W9.9-P1.70-LS14.4-TL",
+          "U3",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer": "TI",
+            "BOM_Manufacturer Part": "LM2596SX-ADJ/NOPB",
+            "BOM_Supplier Part": "C29781",
+            "BOM_LCSC Assembly": "Yes",
+            "puuid": "cd40268100fb439b9af4fa829d321935",
+            "uuid": "96df7ed3d6824dd8b924dfe0608d3f76"
+          }
+        ],
+        [
+          "1uF",
+          2,
+          "CAP-TH_BD4.0-P1.50-D0.8-FD",
+          "C2,C3",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C216309",
+            "BOM_Manufacturer": "Changzhou Huawei Elec",
+            "BOM_Manufacturer Part": "KF1H010MB050A00CV0",
+            "BOM_JLCPCB Part Class": "Extended Part",
+            "puuid": "4e77392dad62499487a3be9d0c41e95e",
+            "uuid": "e344f0190b7441b589bc455b39243993"
+          }
+        ],
+        [
+          "JST XH 2-pin",
+          4,
+          "JST XH-2 TOP ENTRY CONNECTOR",
+          "J1,J2,J3,J4",
+          {
+            "BOM_Manufacturer": "",
+            "BOM_Manufacturer Part": "",
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "puuid": "bbe6f02654bf4b1a9810db8cb4ab274a",
+            "uuid": "c332b48f3249401fbc445d0b24556f83"
+          }
+        ],
+        [
+          "JST-XH_3-PIN",
+          2,
+          "JST XH 2.54MM 3P",
+          "J5,J7",
+          {
+            "BOM_Manufacturer Part": "",
+            "puuid": "628c988a83424a4bb6f481767c3e6990",
+            "uuid": "d02e6bd8a2eb4f118e48a8c44d97acc5"
+          }
+        ],
+        [
+          "2N2222A",
+          4,
+          "TO-92-3_L4.8-W3.7-P2.54-R",
+          "Q1,Q2,Q3,Q4",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C358533",
+            "BOM_Manufacturer": "Foshan Blue Rocket Elec",
+            "BOM_Manufacturer Part": "2N2222A",
+            "BOM_JLCPCB Part Class": "Extended Part",
+            "puuid": "d759540c89844d9986051022192fcef6",
+            "uuid": "4160acdcbf3c44b7857840e3de817f0d"
+          }
+        ],
+        [
+          "1k",
+          8,
+          "R0805",
+          "R1,R2,R6,R7,R8,R9,R10,R11",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "b60f399a7a7e41848b2be1eb49c79141",
+            "uuid": "bb009484ef804a24ac5d18c54b249586"
+          }
+        ],
+        [
+          "L293DN",
+          2,
+          "DIP-16_L19.2-W6.6-P2.54-LS7.6-BL",
+          "U1,U2",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C434590",
+            "BOM_Manufacturer": "HGSEMI",
+            "BOM_Manufacturer Part": "L293DN",
+            "BOM_JLCPCB Part Class": "Extended Part",
+            "puuid": "1f08add49d2741c882f40776d2fab26f",
+            "uuid": "d59786a2b92b4f74a993dab77abad42a"
+          }
+        ],
+        [
+          "1uF",
+          2,
+          "CAP-TH_BD4.0-P1.50-D0.8-FD",
+          "C7,C8",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C216309",
+            "BOM_Manufacturer": "Changzhou Huawei Elec",
+            "BOM_Manufacturer Part": "KF1H010MB050A00CV0",
+            "BOM_JLCPCB Part Class": "Extended Part",
+            "puuid": "4e77392dad62499487a3be9d0c41e95e",
+            "uuid": "e344f0190b7441b589bc455b39243993"
+          }
+        ],
+        [
+          "HDR-M-2.54_1x2",
+          1,
+          "HDR-M-2.54_1X2",
+          "J8",
+          {
+            "BOM_Supplier Part": "C124375",
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "70aa5812f21f4991bf427395d51849f4",
+            "uuid": "a9aa2b14f188405792fa87ac344499a4"
+          }
+        ],
+        [
+          "JST-XH_3-PIN",
+          2,
+          "JST XH 2.54MM 3P",
+          "J10,J11",
+          {
+            "BOM_Manufacturer Part": "",
+            "puuid": "628c988a83424a4bb6f481767c3e6990",
+            "uuid": "d02e6bd8a2eb4f118e48a8c44d97acc5"
+          }
+        ],
+        [
+          "7k",
+          1,
+          "R0805",
+          "R12",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "b60f399a7a7e41848b2be1eb49c79141",
+            "uuid": "bb009484ef804a24ac5d18c54b249586"
+          }
+        ],
+        [
+          "10k",
+          1,
+          "R0805",
+          "R13",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "b60f399a7a7e41848b2be1eb49c79141",
+            "uuid": "bb009484ef804a24ac5d18c54b249586"
+          }
+        ],
+        [
+          "hc 05",
+          1,
+          "HC05 BT",
+          "U4",
+          {
+            "BOM_Manufacturer": "",
+            "BOM_Manufacturer Part": "",
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "puuid": "6cafa669542a49b5820163e14b2cf434",
+            "uuid": "61351147db43423f92414fe09bf71240"
+          }
+        ],
+        [
+          "JST header male 4x1",
+          1,
+          "JST 4 PIN",
+          "U5",
+          {
+            "BOM_Manufacturer": "",
+            "BOM_Manufacturer Part": "",
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "puuid": "db39b89755184cf095b423ff01374a32",
+            "uuid": "d73fed50c0984d188121b52dc043c18a"
+          }
+        ],
+        [
+          "HDR-F-2.54_1x15",
+          2,
+          "HDR-F-2.54_1X15",
+          "H1,H2",
+          {
+            "BOM_Supplier Part": "C124408",
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "bce4bcfcccfb42a296f7a392ab0b7199",
+            "uuid": "5a9ec2085ad6436d86701332d4451b76"
+          }
+        ],
+        [
+          "ARDUINO-NANO-3.0",
+          1,
+          "ARDUINO-NANO-3.0",
+          "M1",
+          {
+            "BOM_Manufacturer Part": "",
+            "puuid": "6bf0f4ac95c74169bbaee50a954d4a97",
+            "uuid": "15fd1d9309314da89be3b8d58fbbdea5"
+          }
+        ]
+      ],
+      "updateTime": 1653669122,
+      "createTime": 1653514348,
+      "histories": [],
+      "created_at": "2022-05-25 23:32:28",
+      "updated_at": "2022-05-27 18:32:02"
+    },
+    {
+      "uuid": "058115a1f1b9c67d91974195ec759e76",
+      "puuid": "e6f67b95948d8dd3dafb1af88e7f6a50",
+      "title": "PCB_robot-modulaire-2",
+      "filename": "PCB_robot-modulaire-2.json",
+      "description": "",
+      "docType": "3",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "8c011694efe04de7ac0c392bf11240d5": 1,
+        "ce25118ef0b041b8a773e71ca28ae65d": 1,
+        "b60f399a7a7e41848b2be1eb49c79141": 10,
+        "4e77392dad62499487a3be9d0c41e95e": 4,
+        "5332c614f5204743ba9a8e4549223bfb": 1,
+        "90d1b58a2d284d63b5d026a0c4e38bab": 1,
+        "b4235c9f870d443994cfe44a496e36ac": 1,
+        "a49573e81e874a71a2de48f04643c903": 1,
+        "bce4bcfcccfb42a296f7a392ab0b7199": 2,
+        "bbe6f02654bf4b1a9810db8cb4ab274a": 4,
+        "628c988a83424a4bb6f481767c3e6990": 4,
+        "c1f0c86794404bcc9f90aa62c02fda5e": 1,
+        "70aa5812f21f4991bf427395d51849f4": 1,
+        "1a7b37028c744c44a208c7852a0fbc88": 1,
+        "6bf0f4ac95c74169bbaee50a954d4a97": 1,
+        "d759540c89844d9986051022192fcef6": 4,
+        "769626f169ec49d9867bc27eb696b6b9": 3,
+        "50d2096590234dbe99c56e37258c65b2": 1,
+        "1f08add49d2741c882f40776d2fab26f": 2,
+        "cd40268100fb439b9af4fa829d321935": 1,
+        "6cafa669542a49b5820163e14b2cf434": 1,
+        "db39b89755184cf095b423ff01374a32": 1
+      },
+      "BOM": [],
+      "updateTime": 1653753197,
+      "createTime": 1653517694,
+      "histories": [],
+      "created_at": "2022-05-26 00:28:14",
+      "updated_at": "2022-05-28 17:53:17"
+    }
+  ],
+  "sort": [
+    "6e558460b199737801772dee4485ac55",
+    "f6d8c02cd2954fa93fd0ea1a50ae61cd",
+    "09c3e7702c8beb0e1be17b622e9380b3",
+    "33b71ae75b4c9cbe8a567397d1663ed7"
+  ],
+  "title": "robot-modulaire-2",
+  "foldername": "robot-modulaire-2",
+  "schfilename": "robot-modulaire-2.json",
+  "schfilemtime": 1653752908832
+}
