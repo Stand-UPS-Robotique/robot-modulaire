@@ -1,6 +1,7 @@
 #include "motor.h"
 
-static unsigned char pwm_motor[MOTOR_SIZE]= {0, 0, 0, 0};
+static unsigned char pwm_motor[SIZE_MOTOR]= {0, 0, 0, 0};
+static unsigned char buffer_pwm_motor[SIZE_MOTOR]= {0, 0, 0, 0};
 
 void init_motor(void)
 {
@@ -27,9 +28,12 @@ void init_motor(void)
 
 void write_pwm_motor(unsigned char idx, unsigned char pwm_value)
 {
-    if(idx >=0 && idx < MOTOR_SIZE)
+    if(idx >=0 && idx < SIZE_MOTOR)
     {
-        pwm_motor[idx] = pwm_value;
+        if(pwm_value >= MIN_PWM_MOTOR && pwm_value <= MAX_PWM_MOTOR)
+        {
+            buffer_pwm_motor[idx] = pwm_value;
+        }
     }
 }
 
@@ -44,23 +48,23 @@ ISR(TIMER2_COMPA_vect)
         PORTB |= (1 << PB3);
     }
 
-    /* set low a pwm motor when a his value is reached */
+    /* set low a pwm motor when his value is reached */
     if(period_counter == pwm_motor[0])
     {
         PORTD &= (~(1 << PD3));
     }
 
-     if(period_counter == pwm_motor[1])
+    if(period_counter == pwm_motor[1])
     {
         PORTD &= (~(1 << PD5));
     }
 
-     if(period_counter == pwm_motor[2])
+    if(period_counter == pwm_motor[2])
     {
         PORTD &= (~(1 << PD6));
     }
 
-     if(period_counter == pwm_motor[3])
+    if(period_counter == pwm_motor[3])
     {
         PORTB &= (~(1 << PB3));
     }
@@ -68,9 +72,13 @@ ISR(TIMER2_COMPA_vect)
     /* increment counter */
     period_counter++;
 
-    /* reset counter when a cycle is completed */
-    if(period_counter == 255)
+    /* reset counter when a cycle is completed and load new values */
+    if(period_counter == 256)
     {
         period_counter = 0;
+        for(int i = 0; i < SIZE_MOTOR; i++)
+        {
+            pwm_motor[i] = buffer_pwm_motor[i];
+        }
     }
 }
