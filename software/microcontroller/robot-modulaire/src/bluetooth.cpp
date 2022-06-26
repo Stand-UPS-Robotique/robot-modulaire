@@ -13,19 +13,6 @@ void init_bluetooth(void)
     serial_bluetooth.begin(BAUDRATE_BLUETOOTH);
 }
 
-void configure_bluetooth(void)
-{
-    while (Serial.available()) 
-    {
-      delay(1);
-      serial_bluetooth.write(Serial.read());
-    }
-    while (serial_bluetooth.available()) 
-    {
-       Serial.write(serial_bluetooth.read());
-    }
-}
-
 void update_bluetooth(void)
 {
     /* statements */

@@ -1,7 +1,7 @@
 #ifndef SERVO_H
 #define SERVO_H
 
-#include <Arduino.h>
+#include <avr/interrupt.h>
 
 #define SIZE_SERVO              2
 #define T_0_SERVO               1.0

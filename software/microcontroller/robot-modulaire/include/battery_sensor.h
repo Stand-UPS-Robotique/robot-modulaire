@@ -1,7 +1,7 @@
 #ifndef BATTERY_SENSOR_H
 #define BATTERY_SENSOR_H
 
-#include <Arduino.h>
+#include <avr/interrupt.h>
 #include "adc.h"
 
 #define RATIO_BATTERY       0.58892815076

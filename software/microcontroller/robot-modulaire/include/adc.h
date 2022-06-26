@@ -1,7 +1,7 @@
 #ifndef ADC_H
 #define ADC_H
 
-#include <Arduino.h>
+#include <avr/interrupt.h>
 #include "battery_sensor.h"
 
 #define ID_OFFSET_ADC       4

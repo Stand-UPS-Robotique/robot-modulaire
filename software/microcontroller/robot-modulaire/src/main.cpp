@@ -4,15 +4,18 @@
 #include "adc.h"
 #include "battery_sensor.h"
 #include "bluetooth.h"
+#include "ultrasonic_sensor.h"
 
 void setup() 
 {
   Serial.begin(9600);
+
   init_bluetooth();
   init_motor();
   init_servo();
   init_adc();
   init_battery_sensor();
+  init_ultrasonic_sensor();
 }
 
 void loop() 
@@ -30,7 +33,7 @@ void loop()
   Serial.print(",");
   Serial.print(data_cmd.slide_x);
   Serial.print(",");
-  Serial.println(data_cmd.slide_y);
-
-  write_pwm_motor(0, data_cmd.joy_x, data_cmd.joy_y);
+  Serial.print(data_cmd.slide_y);
+  Serial.print(",");
+  Serial.println(get_distance_ultrasonic_sensor());
 }

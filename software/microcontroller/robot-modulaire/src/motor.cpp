@@ -39,10 +39,10 @@ void write_pwm_motor(unsigned char idx, unsigned char pwm_value, unsigned char s
     }
 }
 
-ISR(TIMER2_COMPA_vect)
+void handle_interrupt_motor(void)
 {
     static unsigned int period_counter = 0;
-    
+
     /* set high all pwm motors when a new cycle starts */
     if(period_counter == 0)
     {

@@ -27,8 +27,8 @@
 #define IR2_PIN A6
 
 /* ultrasonic sensor pins */
-#define TRIG1_PIN 2
-#define ECHO1_PIN 4
+#define TRIG1_PIN 4
+#define ECHO1_PIN 2
 
 /* battery level sensor */
 #define BAT_PIN A4

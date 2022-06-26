@@ -1,7 +1,7 @@
 #ifndef BLUETOOTH_H
 #define BLUETOOTH_H
 
-#include <Arduino.h>
+#include <avr/interrupt.h>
 #include <SoftwareSerial.h>
 #include "pinmap.h"
 
@@ -26,7 +26,6 @@ typedef struct
 extern data_bluetooth data_cmd;
 
 void init_bluetooth(void);
-void configure_bluetooth(void);
 void update_bluetooth(void);
 
 #endif
