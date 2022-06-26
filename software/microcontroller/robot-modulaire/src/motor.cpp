@@ -8,6 +8,7 @@ void init_motor(void)
     /* config pins as output */
     DDRD |= ((1 << PD3) | (1 << PD5) | (1 << PD6));
     DDRB |= (1 << PB3);
+    DDRC |= ((1 << PC0) | (1 << PC1) | (1 << PC2) | (1 << PC3));
 
     /* deactivate global interruption */
     cli();
@@ -26,10 +27,11 @@ void init_motor(void)
     sei();
 }
 
-void write_pwm_motor(unsigned char idx, unsigned char pwm_value)
+void write_pwm_motor(unsigned char idx, unsigned char pwm_value, unsigned char sense)
 {
-    if(idx >=0 && idx < SIZE_MOTOR)
+    if(idx >=0 && idx < SIZE_MOTOR && (sense == 0 || sense == 1))
     {
+        PORTC = (PORTC & ~(1 << idx)) | (sense << idx);
         if(pwm_value >= MIN_PWM_MOTOR && pwm_value <= MAX_PWM_MOTOR)
         {
             buffer_pwm_motor[idx] = pwm_value;

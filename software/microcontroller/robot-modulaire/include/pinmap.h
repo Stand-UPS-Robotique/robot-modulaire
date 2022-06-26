@@ -18,6 +18,10 @@
 #define SERVO1_PIN 9
 #define SERVO1_PIN 10
 
+/* bluetooth pins */
+#define BL_TX_PIN 7
+#define BL_RX_PIN 8
+
 /* IR sensor pins */
 #define IR1_PIN A5
 #define IR2_PIN A6
