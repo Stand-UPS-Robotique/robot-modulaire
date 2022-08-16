@@ -5,6 +5,7 @@
 #include "battery_sensor.h"
 #include "bluetooth.h"
 #include "ultrasonic_sensor.h"
+#include "ir_sensor.h"
 
 void setup() 
 {
@@ -16,6 +17,7 @@ void setup()
   init_adc();
   init_battery_sensor();
   init_ultrasonic_sensor();
+  init_ir_sensor();
 }
 
 void loop() 
@@ -27,13 +29,18 @@ void loop()
 
   update_bluetooth();
 
-  Serial.print(data_cmd.joy_x);
-  Serial.print(",");
-  Serial.print(data_cmd.joy_y);
-  Serial.print(",");
-  Serial.print(data_cmd.slide_x);
-  Serial.print(",");
-  Serial.print(data_cmd.slide_y);
-  Serial.print(",");
-  Serial.println(get_distance_ultrasonic_sensor());
+  // Serial.print(data_cmd.joy_x);
+  // Serial.print(",");
+  // Serial.print(data_cmd.joy_y);
+  // Serial.print(",");
+  // Serial.print(data_cmd.slide_x);
+  // Serial.print(",");
+  // Serial.print(data_cmd.slide_y);
+  // Serial.print(",");
+  // Serial.println(get_distance_ultrasonic_sensor());
+
+  Serial.print("IR1: ");
+  Serial.print(get_distance_ir_sensor(0));
+  Serial.print("\tIR2: ");
+  Serial.println(get_distance_ir_sensor(1));
 }

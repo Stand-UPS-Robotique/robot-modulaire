@@ -1,0 +1,2 @@
+rootProject.name='Robot Modulaire'
+include ':app'

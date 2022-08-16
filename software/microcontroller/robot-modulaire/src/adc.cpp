@@ -33,8 +33,10 @@ ISR(ADC_vect)
             update_battery_sensor(ADC);
             break;
         case 5:
+            update_ir_sensor(0, ADC);
             break;
         case 6:
+            update_ir_sensor(1, ADC);
             break;
     }
     

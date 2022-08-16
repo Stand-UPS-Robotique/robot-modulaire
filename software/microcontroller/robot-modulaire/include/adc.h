@@ -3,6 +3,7 @@
 
 #include <avr/interrupt.h>
 #include "battery_sensor.h"
+#include "ir_sensor.h"
 
 #define ID_OFFSET_ADC       4
 #define USED_PERIPH_ADC     3
