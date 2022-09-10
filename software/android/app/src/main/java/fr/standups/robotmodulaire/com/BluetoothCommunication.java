@@ -7,6 +7,7 @@ import java.io.OutputStream;
 
 
 public class BluetoothCommunication {
+
     private static BluetoothCommunication INSTANCE;
 
     private final BluetoothSocket mmSocket;
@@ -30,6 +31,13 @@ public class BluetoothCommunication {
     public static BluetoothCommunication getInstance(BluetoothSocket socket, Handler handler) {
         if(INSTANCE == null) {
             INSTANCE = new BluetoothCommunication(socket, handler);
+        }
+        return INSTANCE;
+    }
+
+    public static BluetoothCommunication getInstance() {
+        if(INSTANCE == null) {
+            return null;
         }
         return INSTANCE;
     }

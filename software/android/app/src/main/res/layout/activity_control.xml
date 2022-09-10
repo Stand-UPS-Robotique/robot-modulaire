@@ -17,15 +17,17 @@
         custom:JV_fixedCenter="false"/>
 
     <SeekBar
-        android:id="@+id/seekBar2"
+        android:id="@+id/seekBar1"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1" />
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:rotation="270" />
 
     <SeekBar
-        android:id="@+id/seekBar3"
+        android:id="@+id/seekBar2"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1" />
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:rotation="270" />
 
 </LinearLayout>
