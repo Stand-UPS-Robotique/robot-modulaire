@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Robot Modulaire</string>
+    <string name="se_connecter" />
+    <string name="rechercher" />
 </resources>
