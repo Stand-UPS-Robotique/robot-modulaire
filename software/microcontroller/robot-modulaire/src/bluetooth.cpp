@@ -1,7 +1,7 @@
 #include "bluetooth.h"
 
 SoftwareSerial serial_bluetooth(BL_RX_PIN, BL_TX_PIN);
-data_bluetooth data_cmd = {0, 0, 0, 0};
+data_bluetooth data_cmd = {127, 127, 0, 0};
 
 void init_bluetooth(void)
 {
