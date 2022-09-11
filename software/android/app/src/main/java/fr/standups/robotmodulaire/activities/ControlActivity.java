@@ -5,6 +5,7 @@ package fr.standups.robotmodulaire.activities;
 import android.annotation.SuppressLint;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.SeekBar;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -16,6 +17,8 @@ public class ControlActivity extends AppCompatActivity {
 
     private SeekBar seekBar1, seekBar2;
     private int joyX, joyY, sliderX, sliderY;
+    private JoystickView joystickView;
+    private BluetoothCommunication bluetoothComInstance;
 
     @SuppressLint("SourceLockedOrientationActivity")
     @Override
@@ -24,22 +27,27 @@ public class ControlActivity extends AppCompatActivity {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
         setContentView(R.layout.activity_control);
 
+        bluetoothComInstance = BluetoothCommunication.getInstance();
+
         seekBar1 = findViewById(R.id.seekBar1);
         seekBar1.setMax(255);
 
         seekBar2 = findViewById(R.id.seekBar2);
         seekBar2.setMax(255);
 
-        JoystickView joystickView = findViewById(R.id.joystick);
+        joystickView = findViewById(R.id.joystick);
         joystickView.setOnMoveListener((angle, strength) -> {
             joyX = (int) (Math.cos(Math.PI * (double) angle / 180.0) * (double) strength * 1.28) + 127;
             joyY = (int) (Math.sin(Math.PI * (double) angle / 180.0) * (double) strength * 1.28) + 127;
+
+            bluetoothComInstance.write(getDataString());
         });
 
         seekBar1.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                 sliderX = progress;
+                bluetoothComInstance.write(getDataString());
             }
 
             @Override
@@ -53,6 +61,7 @@ public class ControlActivity extends AppCompatActivity {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                 sliderY = progress;
+                bluetoothComInstance.write(getDataString());
             }
 
             @Override
@@ -65,31 +74,31 @@ public class ControlActivity extends AppCompatActivity {
 
             }
         });
-
-        Thread t = new Thread() {
-            @Override
-            public void run() {
-                while(true)
-                {
-                    assert BluetoothCommunication.getInstance() != null;
-                    BluetoothCommunication.getInstance().write(getDataString());
-                    System.out.println(getDataString());
-                }
-            }
-        };
-        t.start();
     }
 
     public String getDataString() {
         StringBuilder bob = new StringBuilder();
-        bob.append(joyX);
+        bob.append(int2fixStr(joyX));
         bob.append(",");
-        bob.append(joyY);
+        bob.append(int2fixStr(joyY));
         bob.append(",");
-        bob.append(sliderX);
+        bob.append(int2fixStr(sliderX));
         bob.append(",");
-        bob.append(sliderY);
+        bob.append(int2fixStr(sliderY));
         bob.append("\n");
         return bob.toString();
+    }
+
+    private String int2fixStr(int a) {
+        if(a < 10) {
+            return "00" + a;
+        }
+        else if(a < 100)
+        {
+            return "0" + a;
+
+        } else {
+            return Integer.toString(a);
+        }
     }
 }

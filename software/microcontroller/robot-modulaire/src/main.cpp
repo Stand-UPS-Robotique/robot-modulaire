@@ -43,7 +43,7 @@ void control_omniwheels()
   }
 
   /* compute pwm values */
-  left_up_mot = 
+
 
 
   /* write motors */
@@ -73,15 +73,22 @@ void loop()
   // Serial.print("rate: ");
   // Serial.println(get_rate_battery_sensor());
 
-  control_omniwheels();
+  // control_omniwheels();
+  static int buffer = -1;
 
-  Serial.print(data_cmd.joy_x);
-  Serial.print(",");
-  Serial.print(data_cmd.joy_y);
-  Serial.print(",");
-  Serial.print(data_cmd.slide_x);
-  Serial.print(",");
-  Serial.println(data_cmd.slide_y);
+  update_bluetooth();
+
+  if(buffer != data_cmd.joy_x)
+  {
+    buffer = data_cmd.joy_x;
+    Serial.println(buffer);
+  }
+  // Serial.print(",");
+  // Serial.print(data_cmd.joy_y);
+  // Serial.print(",");
+  // Serial.print(data_cmd.slide_x);
+  // Serial.print(",");
+  // Serial.println(data_cmd.slide_y);
 
   // Serial.print("IR1: ");
   // Serial.print(get_distance_ir_sensor(0));
